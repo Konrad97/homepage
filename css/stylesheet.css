@@ -2,11 +2,25 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: #1E1E1E;
 }
 
-h1 {
+main {
+    padding-bottom:50px; /* Höhe des Footers */
+}
+
+footer {
+    height: 50px;
+     margin-top: -50px;
+     background: #2E2E2E;
+}
+
+.Text-Wrapper {
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
@@ -14,6 +28,12 @@ h1 {
     padding-bottom: 40px;
 
 }
+
+.Site {
+    height: auto; 
+    min-height: 100%;
+/*     padding-bottom:50px;
+ */}
 
 .Card {
     padding: 0;
@@ -27,16 +47,28 @@ h1 {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 
+.Card.Footer {
+    background: #2E2E2E;
+    bottom:0;
+}
+
+.Image-Container {
+    display: flex;
+}
+
 .Logo{
     height: 300px;
     width: auto;
     display: block;
     margin: auto;
     margin: auto;
-    
     transition: transform .2s;
 }
 
 .Logo:hover {
     transform: scale(1.05);
+}
+
+.NavItem {
+    background: #2E2E2E;
 }
