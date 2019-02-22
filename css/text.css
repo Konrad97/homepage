@@ -1,0 +1,39 @@
+.Word {
+    color: #ffffff;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+}
+
+.Word.Verb {
+    color: #DCDCAA;
+}
+
+.Word.Adjective {
+    color: #007acc;
+}
+
+.Word.Variable {
+    color: #9CDCFE;
+}
+
+.Word.Noun {
+    color: #4EC9B0;
+}
+
+.Word.Keyword {
+    color: #C586C0;
+}
+
+.Word.Comment {
+    color: #6A9955;
+}
+
+.Word.Other {
+    color: #808080;
+}
+
+.Word.String {
+    color: #ce9178;
+}
+
+

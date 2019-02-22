@@ -2,59 +2,29 @@
     margin: 0;
 }
 
+body {
+    background: #1E1E1E;
+}
+
 h1 {
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
-.Word {
-    color: #ffffff;
-    font-family: Consolas, 'Courier New', monospace;
-    font-weight: normal;
-}
-
-.Word.Verb {
-    color: #DCDCAA;
-}
-
-.Word.Adjective {
-    color: #007acc;
-}
-
-.Word.Variable {
-    color: #9CDCFE;
-}
-
-.Word.Noun {
-    color: #4EC9B0;
-}
-
-.Word.Keyword {
-    color: #C586C0;
-}
-
-.Word.Comment {
-    color: #6A9955;
-}
-
-.Word.Other {
-    color: #808080;
-}
-
-.Word.String {
-    color: #ce9178;
-}
-
-
-
-.Header {
+.Card {
     padding: 0;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
-    background: #1E1E1E;
+}
+
+.Card.White {
+    background: #DDDDDD;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 
 .Logo{
@@ -64,9 +34,9 @@ h1 {
     margin: auto;
     margin: auto;
     
-    transition: all 0.1s ease;
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    -ms-transition: all 0.1s ease;
+    transition: transform .2s;
+}
+
+.Logo:hover {
+    transform: scale(1.05);
 }
