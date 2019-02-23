@@ -8,16 +8,44 @@ html, body {
 
 body {
     background: #1E1E1E;
+    padding-bottom: 50px; 
+}
+
+header {
+    background: #2E2E2E; 
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    overflow: auto;
+}
+
+nav a{
+    display:inline-block;
+    padding:30px;
+}
+
+nav li a:hover {
+    background-color: #1E1E1E;
 }
 
 main {
-    padding-bottom:50px; /* Höhe des Footers */
+    /*padding-bottom:50px;*/
+}
+
+main ul {
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 footer {
     height: 50px;
-     margin-top: -50px;
-     background: #2E2E2E;
+    margin-top: -50px;
+    background: #2E2E2E;
 }
 
 .Text-Wrapper {
@@ -26,14 +54,13 @@ footer {
     padding-right: 20%;
     padding-top: 40px;
     padding-bottom: 40px;
-
 }
 
 .Site {
     height: auto; 
     min-height: 100%;
-/*     padding-bottom:50px;
- */}
+    padding-bottom:50px;
+}
 
 .Card {
     padding: 0;
@@ -68,7 +95,19 @@ footer {
 .Logo:hover {
     transform: scale(1.05);
 }
-
+.List {
+    display: block;
+    padding: 0;
+}
 .NavItem {
+    margin: 0;
+    height: 100%;
     background: #2E2E2E;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.NavItem.Active {
+    background: #1E1E1E;
+
 }

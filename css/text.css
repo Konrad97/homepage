@@ -30,6 +30,10 @@
     color: #6A9955;
 }
 
+.Word.Active {
+    color: #FFFFFF;
+}
+
 .Word.Other {
     color: #808080;
 }
@@ -38,4 +42,38 @@
     color: #ce9178;
 }
 
+.Word.Nav {
+    color: #808080;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+    font-size: 25px;
+    text-decoration: none;
+}
 
+.Word.Nav.Active {
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #4EC9B0;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+h2 {
+    color: #4EC9B0;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+p {
+    color: #9CDCFE;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+    font-size: 25px;
+    text-decoration: none; 
+}
