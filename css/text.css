@@ -77,3 +77,11 @@ p {
     font-size: 25px;
     text-decoration: none; 
 }
+
+.Comment {
+    color: #6A9955;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+    font-size: 25px;
+    text-decoration: none; 
+}
