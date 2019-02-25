@@ -111,10 +111,14 @@ article {
     height: 100%;
     background: #2E2E2E;
     display: inline-block;
-    overflow: hidden;
 }
 
 .NavItem.Active {
     background: #1E1E1E;
+}
 
+.ItemImage {
+    width: 40%;
+    height: auto;
+    float: right;
 }
