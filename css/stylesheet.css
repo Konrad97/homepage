@@ -47,11 +47,12 @@ header li a:hover {
 }
 
 header a {
+    color: #808080;
     display: inline-block;
     padding: 30px;
 }
 
-.Nav-Active{
+.active {
     background: #1E1E1E;
     color: #FFFFFF;
 }
@@ -117,6 +118,10 @@ article {
     margin: 0 auto;
     padding: 20px;
     max-width: 800px;
+}
+
+article ul li {
+   /*CS*/
 }
 
 article ul li h2 {
