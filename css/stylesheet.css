@@ -72,36 +72,25 @@ main ul {
 }
 
 footer {
-    height: 50px;
-    margin: 20px;
     text-align: center;
-}
-
-footer div {
-    margin: 20px;
+    line-height: 60px;
+    font-size: 25px;
 }
 
 footer p {
-    line-height: 40px;
+    margin: 20px;
 }
+
 
 .Text-Wrapper {
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 article {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 800px;
-}
-
-article ul li {
-   /*CS*/
+    margin: 0 auto; 
+    max-width: 900px;
 }
 
 article ul li h2 {
@@ -121,29 +110,18 @@ article ul li a {
     font-size: 25px;
 }
 
-.Spacer { /* Content sticks not to Footer(Not nice tho... needs fix) TODO */
+.Spacer { /* Content doesnt stick to Footer(Not nice tho... needs fix) TODO */
     display: table-row;
-    height:20px;
+    height:40px;
 }
 
-.Card {
+.Banner {
     padding: 0;
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-}
-
-.Card.White {
     background: #DDDDDD;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
-
-.Card.Footer {
-    background: #2E2E2E;
-    bottom: 0;
-}
-
-.Image-Container {
     display: flex;
 }
 
