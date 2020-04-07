@@ -2,13 +2,13 @@
     <nav>
         <ul>
             <li>
-                <a class="Text Button" href="/index.php">index.html</a>
+                <a class="Text Button" href="/index">index.html</a>
             <li>
-                <a class="Text Button" href="/src/projects.php">projects.html</a>
+                <a class="Text Button" href="/src/projects">projects.html</a>
                 <!--<li>
                 <a class="Text Button" href="/html/rl_projects.html">rl_projects.html</a>-->
             <li>
-                <a class="Text Button" href="/src/other.php">other.html</a>
+                <a class="Text Button" href="/src/other">other.html</a>
                 
         </ul>
     </nav>

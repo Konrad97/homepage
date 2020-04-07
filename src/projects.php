@@ -11,7 +11,7 @@ include 'head.php'
     ?>
 	<main>
         <?php 
-            include("projects/project_list.php")
+            include("project_list/project_list.php")
         ?>
 	</main>
 
