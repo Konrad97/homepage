@@ -88,11 +88,14 @@ footer p {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 article {
     margin: 0 auto; 
     max-width: 900px;
+    
 }
 
 article ul li h2 {
