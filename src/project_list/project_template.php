@@ -1,21 +1,37 @@
-<li>
-<div class="ItemImageContainer">
+<li class="Item">
+	<div class="ItemImageContainer">
 		<img class="ItemImage" src=<?php echo ($resource) ?>>
 	</div>
 	<h2 class="Text Heading"><?php echo ($title) ?></h2>
-	
+
 	<p class="Text Comment"># Made <?php echo ($year) ?></p>
 	<p class="Text Common"><?php echo ($description) ?>
-	</p>
-	<ul>
-		<?php
-		foreach ($actions as $action) {
+		<?php if (count($with) != 0) {
 		?>
-			<li>
-				<a class="Text Button" href=<?php echo ($action)['href'] ?> target="_blank"><?php echo ($action)['title'] ?></a>
-			</li>
-		<?php
-		};
+			<p class="Text Comment"># With: <?php echo join(", ", $with); ?></p>
+		<?php } ?>
+
+		
+		<?php if (count($tech) != 0) {
+			# TODO Make this nicer
 		?>
-	</ul>
+			<p class="Text Link">
+				Tech = [
+					<span class="Text Keyword">
+						<?php echo join("<span class=\"Text Link\">, </span>", $tech); ?>
+					</span>
+					]
+			</p>
+		<?php } ?>
+		<ul>
+			<?php
+			foreach ($actions as $action) {
+			?>
+				<li>
+					<a class="Text Button" href=<?php echo ($action)['href'] ?> target="_blank"><?php echo ($action)['title'] ?></a>
+				</li>
+			<?php
+			};
+			?>
+		</ul>
 </li>

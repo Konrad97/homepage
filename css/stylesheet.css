@@ -166,14 +166,17 @@ article ul li a {
 }
 
 .ItemImage {
+    padding-top: 20px;
     max-height: 300px;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+.Item {
+    margin-bottom: 60px;
+}
 .Text {
     font-family: Consolas, 'Courier New', monospace;
     text-decoration: none;
