@@ -1,6 +1,9 @@
 <li>
+<div class="ItemImageContainer">
+		<img class="ItemImage" src=<?php echo ($resource) ?>>
+	</div>
 	<h2 class="Text Heading"><?php echo ($title) ?></h2>
-	<img class="ItemImage" src=<?php echo ($resource) ?>>
+	
 	<p class="Text Comment"># Made <?php echo ($year) ?></p>
 	<p class="Text Common"><?php echo ($description) ?>
 	</p>
