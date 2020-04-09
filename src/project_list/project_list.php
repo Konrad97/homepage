@@ -74,7 +74,7 @@ function generateListItem(
     <ul>
         <?php generateListItem(
             $title = "DotGameReloaded",
-            $resource = "/res/dotgameRemastered_screenshot.png",
+            $resource = "/res/DotgameRemastered_screenshot.png",
             $year = "2018",
             $description = "A multiplayer game about circle cannibalism...",
             $with = [],
