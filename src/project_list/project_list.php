@@ -11,7 +11,7 @@ function action(
 
 function generateListItem(
     $title,
-    $resource,
+    $resource = null,
     $year,
     $description,
     $with,
@@ -23,13 +23,13 @@ function generateListItem(
 ?>
 
 <article>
-    <h1 class="Text Heading Text-Wrapper">Aplications</h1>
+    <h1 class="Text Heading Text-Wrapper">Applications</h1>
     <ul>
         <?php generateListItem(
             $title = "FHWS@IoT Device Finder",
-            $resource = "TODO",
+            $resource = null,
             $year = "2020",
-            $description = "A device ip traking system, that helps by finding a devices ip address in a network where static ip-Adresses are not an option. Consisting of IoT devices and a webfrontend.",
+            $description = "A device ip traking system, that helps by finding a devices ip address in a restrictive network where DHCP is enabled. Consisting of IoT devices and a webfrontend.",
             $with = ["Julian Z."],
             $tech = ["Angular", ".NET Core", "Python"],
             $actions = [
