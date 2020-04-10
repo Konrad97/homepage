@@ -14,8 +14,7 @@ include 'src/head.php'
             <h1 class="Text Common">
                 <span class="Text Heading">Hey my name is Konrad</span>
                 <br><br>
-                You found my space on the web, where I write about what I <span class="Text Link">do
-                </span>and <span class="Text Link">love</span>
+                You found my website where I  <span class="Text Link">collect</span> and <span class="Text Link">document</span> my work<br><br>Hope you find something interesting
             </h1>
         </article>
 
@@ -26,8 +25,8 @@ include 'src/head.php'
         <article class="Text-Wrapper">
             <h1 class="Text Heading">About me<br><br>
                 <span class="Text Common">
-                    I am an undergraduate Computer Sience student at the <a class="Text Keyword" href="https://www.fhws.de" target="_blank">FHWS</a>
-                    in Würzburg, Germany. I enjoy Star Wars, coding and playing Counter-Strike with my friends
+                    I studied Computer Science at the <a class="Text Keyword" href="https://www.fhws.de" target="_blank">FHWS</a>
+                    in Würzburg, Germany and am now working as a <br/>Software Developer
                 </span>
             </h1>
         </article>
