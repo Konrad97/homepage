@@ -14,5 +14,5 @@ jobs:
         run: |
           docker build ./src -t registry.konradmelzer.de/homepage
       - name: docker push
-        run push registry.konradmelzer.de/homepage
+        run: push registry.konradmelzer.de/homepage
       
