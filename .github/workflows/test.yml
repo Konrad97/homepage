@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@v2
       - name: docker build
         run: |
           docker build ./src -t registry.konradmelzer.de/homepage
