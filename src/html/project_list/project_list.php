@@ -27,7 +27,7 @@ function generateListItem(
     <ul>
         <?php generateListItem(
             $title = "FHWS@IoT Device Finder",
-            $resource = null,
+            $resource = "/res/DeviceFinder_logo.png",
             $year = "2020",
             $description = "A device ip traking system, that helps by finding a devices ip address in a restrictive network where DHCP is enabled. Consisting of IoT devices and a webfrontend.",
             $with = ["Julian Z."],
