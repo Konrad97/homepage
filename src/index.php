@@ -2,12 +2,12 @@
 <html>
 
 <?php
-include 'src/head.php'
+include 'html/head.php'
 ?>
 
 <body>
     <?php
-    include 'src/header.php'
+    include 'html/header.php'
     ?>
     <main>
         <article class="Text-Wrapper">
@@ -37,7 +37,7 @@ include 'src/head.php'
     </main>
 
     <?php
-    include 'src/footer.php'
+    include 'html/footer.php'
     ?>
 </body>
 

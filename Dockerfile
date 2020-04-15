@@ -1,9 +1,5 @@
-FROM httpd:2.4.43
+FROM php:7.2-apache
 
-WORKDIR /usr/local/apache2/htdocs
+RUN a2enmod rewrite && service apache2 restart
 
-CMD rm -rf .
-
-COPY src/ .
-
-CMD service apache2 start
+COPY src/ /var/www/html/
