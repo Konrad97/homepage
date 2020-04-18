@@ -106,7 +106,7 @@ article ul li p {
     margin-bottom: 10px;
 }
 
-article ul li a {
+.Project-Button {
     float: left;
     margin: 10px 10px 0 0;
     padding: 15px;
