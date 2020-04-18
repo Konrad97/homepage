@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Docker login
         run: |
-          docker login -u $DOCKER_USER --password-stdin $DOCKER_PASSWORD $DOCKER_REGISTRY
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_REGISTRY
       - name: Docker build
         run: |
           docker build . -t $DOCKER_REGISTRY/homepage
