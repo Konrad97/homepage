@@ -32,7 +32,7 @@
 			foreach ($actions as $action) {
 			?>
 				<li>
-					<a class="Text Button" href=<?php echo ($action)['href'] ?> target="_blank"><?php echo ($action)['title'] ?></a>
+					<a class="Text Button Project-Button" href=<?php echo ($action)['href'] ?> target="_blank"><?php echo ($action)['title'] ?></a>
 				</li>
 			<?php
 			};
