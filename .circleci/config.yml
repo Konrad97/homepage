@@ -1,0 +1,67 @@
+
+executors:
+  executor:
+     machine:
+      image: ubuntu-1604:201903-01
+
+version: 2.1
+jobs:
+  build:
+    executor: executor
+    steps:
+      - checkout
+
+      - run:
+          name: Docker build
+          command: |
+            docker build -t $DOCKER_REGISTRY/homepage:latest .
+
+      - run:
+          name: Docker save
+          command: |
+            mkdir -p /tmp/caches
+            docker save -o /tmp/caches/homepage.tar $DOCKER_REGISTRY/homepage:latest
+
+      - persist_to_workspace:
+          root: /tmp/caches
+          paths:
+            - homepage.tar
+
+  deploy:
+    executor: executor
+    steps:
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: /tmp/caches
+
+      - run:
+          name: Docker load
+          command: |
+            docker load -i /tmp/caches/homepage.tar
+
+      - run:
+          name: Docker login
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_REGISTRY
+
+      - run:
+          name: Docker push
+          command: |
+            docker push $DOCKER_REGISTRY/homepage:latest
+
+      - run:
+          name: Trigger deploy webhook
+          command: |
+            curl -X POST $DOCKER_WEBHOOK
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
