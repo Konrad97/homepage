@@ -1,8 +1,11 @@
 <script>
+  import BasePage from "../Components/BasePage.svelte";
   import ProjectCard from "../Components/ProjectCard.svelte";
-import ProjectSectionHeading from "../Components/ProjectSectionHeading.svelte";
+  import ProjectSectionHeading from "../Components/ProjectSectionHeading.svelte";
 </script>
-<div class="grid grid-cols-1 gap-6">
+
+<BasePage>
+  <div class="grid grid-cols-1 gap-6">
   <ProjectSectionHeading>
     Applications
   </ProjectSectionHeading>
@@ -39,3 +42,4 @@ import ProjectSectionHeading from "../Components/ProjectSectionHeading.svelte";
   techs={["	Typescript", "Node.js"]}
   />
 </div>
+</BasePage>

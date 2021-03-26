@@ -17,7 +17,6 @@
     <nav
       class="bg-gray-light flex justify-center items-stretch flex-col sm:flex-row"
     >
-      {url}
       <Link
         class="px-9 py-6 outline-none text-white text-2xl text-center hover:bg-gray"
         to="/index">index.html</Link
@@ -32,10 +31,11 @@
       >
     </nav>
     <main class="flex justify-center flex-grow">
-      <div class="w-full max-w-3xl m-2 p-2">
+      <div class="w-full max-w-3xl m-5 p-2">
         <Route path="index" component={Index} />
         <Route path="projects" component={Projects} />
         <Route path="other" component={Other} />
+        <Route path="*" component={NotFound} />
       </div>
     </main>
     <Footer class="flex"></Footer>

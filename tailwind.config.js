@@ -34,6 +34,24 @@ module.exports = {
           DEFAULT: '#C586C0'
         }
       },
+      transformOrigin: {
+        popup: 'center 50vh',
+      },
+      keyframes: {
+        popup: {
+          '0%': {
+            transform: 'scale(90%)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'scale(100%)',
+            opacity: 1,
+          },
+        }
+      },
+      animation: {
+        popup: 'popup 0.2s 1',
+      }
     },
   },
   variants: {
