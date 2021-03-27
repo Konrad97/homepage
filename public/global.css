@@ -2,5 +2,5 @@ html, body {
 	height: 100%;
 	/* Used to show scroll bar but not to shrink page for the width of the scroll bar */
 	width: 100vw;
-	overflow-x: clip;
+	overflow-y: overlay;
 }

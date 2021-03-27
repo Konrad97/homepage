@@ -40,11 +40,11 @@ module.exports = {
       keyframes: {
         popup: {
           '0%': {
-            transform: 'scale(90%)',
+            transform: 'scale(0.9)',
             opacity: 0,
           },
           '100%': {
-            transform: 'scale(100%)',
+            transform: 'scale(1)',
             opacity: 1,
           },
         }
