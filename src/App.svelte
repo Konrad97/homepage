@@ -38,7 +38,7 @@
         <Route path="*" component={NotFound} />
       </div>
     </main>
-    <Footer class="flex"></Footer>
+    <Footer class="flex" />
   </div>
 </Router>
 

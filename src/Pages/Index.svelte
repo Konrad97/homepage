@@ -15,8 +15,9 @@
         <p class="text-green text-2xl text-center"># TODO logo</p>
         <h1 class="text-turquoise text-4xl">About me</h1>
         <p class="text-blue-light text-3xl">
-            I studied Computer Science at the <span class="text-purple">FHWS</span> in Würzburg, Germany and am
-            now working as a Software Developer
+            I studied Computer Science at the <span class="text-purple"
+                >FHWS</span
+            > in Würzburg, Germany and am now working as a Software Developer
         </p>
         <p class="text-green text-2xl text-center"># TODO map</p>
     </div>

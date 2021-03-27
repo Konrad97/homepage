@@ -1,7 +1,5 @@
 <script>
-import BasePage from "../Components/BasePage.svelte";
-
+    import BasePage from "../Components/BasePage.svelte";
 </script>
-<BasePage>
-    NotFound
-</BasePage>
+
+<BasePage>NotFound</BasePage>
